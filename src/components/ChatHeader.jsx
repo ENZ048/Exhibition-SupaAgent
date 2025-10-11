@@ -372,6 +372,8 @@ const StatusBlock = styled.div`
   }
 `;
 
+// dhcdsgcvhdsc
+
 const BotName = styled.div`
   font-weight: 700;
   color: #ffffff;
