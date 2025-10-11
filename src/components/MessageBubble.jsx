@@ -40,12 +40,13 @@ const MessageBubble = styled.div`
   line-height: 1.4;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: ${(props) => (props.$isUser ? "nowrap" : "pre-wrap")};
+  white-space: ${(props) => (props.$isUser ? "nowrap" : "normal")};
   hyphens: auto;
   word-break: break-word;
   position: relative;
   margin: ${(props) => (props.$isUser ? "0.5rem 0" : "0.25rem 0")};
-  width: ${(props) => (props.$isUser ? "auto" : "fit-content")};
+  width: ${(props) => (props.$isUser ? "auto" : "100%")};
+  max-width: 100%;
   min-width: ${(props) => (props.$isUser ? "200px" : "60px")};
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -103,6 +104,9 @@ const MessageContent = styled.div`
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-word;
+  white-space: normal;
+  width: 100%;
+  max-width: 100%;
   /* Prevent pre-wrap from forcing line breaks inside lists */
   ol, ul, li { white-space: normal; }
   
@@ -112,7 +116,10 @@ const MessageContent = styled.div`
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
+    white-space: normal;
     line-height: 1.45;
+    width: 100%;
+    max-width: 100%;
     
     &:last-child {
       margin-bottom: 0;

@@ -1064,10 +1064,10 @@ const SupaChatbotInner = ({ chatbotId, apiBase }) => {
     }
     
     const suggestionMessages = {
-      'services': 'What Services You Offer?',
-      'about': 'Who is Troika Tech?',
-      'pricing': 'What are your pricing plans?',
-      'help': 'How your services can help me?'
+      'programs': 'What Programs Does ITM Offer?',
+      'placements': 'How Are Placements at ITM Business School?',
+      'global': 'Does ITM Provide Global Study Opportunities?',
+      'campus': 'What Is Campus Life Like at ITM Kharghar?'
     };
     
     const message = suggestionMessages[action] || 'Tell me more about this';

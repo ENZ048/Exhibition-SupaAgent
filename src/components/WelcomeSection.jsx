@@ -1041,24 +1041,24 @@ const WelcomeSection = ({ onSuggestionClick }) => {
 
   const suggestions = [
     {
-      icon: "🛠️",
-      text: "What Services You Offer?",
-      action: "services"
+      icon: "🎓",
+      text: "What Programs Does ITM Offer?",
+      action: "programs"
     },
     {
-      icon: "🏢",
-      text: "Who is Troika Tech?",
-      action: "about"
+      icon: "💼",
+      text: "How Are Placements at ITM Business School?",
+      action: "placements"
     },
     {
-      icon: "💰",
-      text: "What are your pricing plans?",
-      action: "pricing"
+      icon: "🌍",
+      text: "Does ITM Provide Global Study Opportunities?",
+      action: "global"
     },
     {
-      icon: "💡",
-      text: "How your services can help me?",
-      action: "help"
+      icon: "🏫",
+      text: "What Is Campus Life Like at ITM Kharghar?",
+      action: "campus"
     }
   ];
 
